@@ -1,3 +1,6 @@
+2.0.0 - 2009-12-15
+* Swapped out screenscraping API for Campfire rest API [Mal McKay]
+
 1.2.1 - 2009-08-27
 * Fixes for listening after campfire updates [Jordan Byron]
 

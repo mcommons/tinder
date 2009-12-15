@@ -1,12 +1,8 @@
 require 'rubygems'
-require 'active_support'
-require 'uri'
-require 'net/http'
-require 'net/https'
-require 'open-uri'
-require 'hpricot'
+require 'httparty'
+require 'json'
+# require 'active_support'
 
-require 'tinder/multipart'
 require 'tinder/campfire'
 require 'tinder/room'
 

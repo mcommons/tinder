@@ -5,7 +5,7 @@
 
 Gem::Specification.new do |s|
   s.name = %q{tinder}
-  s.version = "1.2.2"
+  s.version = "2.0.0"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Brandon Keepers"]
@@ -25,7 +25,6 @@ Gem::Specification.new do |s|
      "init.rb",
      "lib/tinder.rb",
      "lib/tinder/campfire.rb",
-     "lib/tinder/multipart.rb",
      "lib/tinder/room.rb",
      "site/index.html",
      "site/stylesheets/style.css",
@@ -45,7 +44,7 @@ Gem::Specification.new do |s|
   s.require_paths = ["lib"]
   s.rubyforge_project = %q{tinder}
   s.rubygems_version = %q{1.3.3}
-  s.summary = %q{An (unofficial) Campfire API}
+  s.summary = %q{A TInder wrapper for the official Campfire API}
   s.test_files = [
     "spec/campfire_spec.rb",
      "spec/spec_helper.rb",
@@ -59,19 +58,16 @@ Gem::Specification.new do |s|
 
     if Gem::Version.new(Gem::RubyGemsVersion) >= Gem::Version.new('1.2.0') then
       s.add_runtime_dependency(%q<activesupport>, [">= 0"])
-      s.add_runtime_dependency(%q<hpricot>, [">= 0"])
-      s.add_runtime_dependency(%q<mime-types>, [">= 0"])
+      s.add_runtime_dependency(%q<httparty>, [">= 0"])
       s.add_development_dependency(%q<rspec>, [">= 0"])
     else
       s.add_dependency(%q<activesupport>, [">= 0"])
-      s.add_dependency(%q<hpricot>, [">= 0"])
-      s.add_dependency(%q<mime-types>, [">= 0"])
+      s.add_dependency(%q<httparty>, [">= 0"])
       s.add_dependency(%q<rspec>, [">= 0"])
     end
   else
     s.add_dependency(%q<activesupport>, [">= 0"])
-    s.add_dependency(%q<hpricot>, [">= 0"])
-    s.add_dependency(%q<mime-types>, [">= 0"])
+    s.add_dependency(%q<httparty>, [">= 0"])
     s.add_dependency(%q<rspec>, [">= 0"])
   end
 end
